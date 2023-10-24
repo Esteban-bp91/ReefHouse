@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+    font-family: 'Zen Dots', sans-serif;
+    background: linear-gradient(45deg, #4200FF, #000000);
+}
+
+header{
+    padding: 25px 0px;
+    font-size: 32px;
+    height: fit-content;
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'logo nav icons';
+}
+
+.inicio{
+    margin: 20px 60px;
+    grid-area: logo;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: #0047FF;
+}
+
+.icons{
+    margin: 20px 60px;
+    grid-area: icons;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.icons a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
+}
+
+.icons a i{
+    -webkit-transform: scale(1.25);
+}
+
+nav{
+    grid-area: nav;
+    display: inline-flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 0 10px;
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.login{
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 770px;  
+    display: flex;  
+    position: relative;
+    top: 100px; 
+    align-items: center;
+}
+
+.login .in{
+    margin: 100px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.login .in h1{
+    margin-bottom: 45px;
+    font-size: 56px;
+}
+
+.login .in label input{
+    margin: 25px;
+    width: 450px;
+    height: 60px;
+    border: solid 2px gray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.login .in button{
+    background-color: #4200FF;
+    margin-bottom: 35px;
+    width: 500px;
+    height: 60px;
+    border: solid 2px gray;
+    border-radius: 30px;
+    font-size: 24px;
+    font-family: inherit;
+    color: white;
+}
+
+.login .in .p{
+    margin-bottom: 35px;
+}
+
+.login .in .p p{
+    position: relative;
+    left: 150px;
+}
+
+.login .img{
+    margin: 100px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.login .img img{
+    width: 35vw;
+    height: 36vw;
+    border-radius: 30px;
+    object-fit: cover;
+}
