@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+    font-family: 'Zen Dots', sans-serif;}
+
+.block{
+    margin: auto;
+    min-width: 100%;
+}
+
+header{
+    padding: 25px 0px;
+    font-size: 32px;
+    height: fit-content;
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'logo nav icons';
+}
+
+.inicio{
+    margin: 20px 60px;
+    grid-area: logo;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: #0047FF;
+}
+
+.icons{
+    margin: 20px 60px;
+    grid-area: icons;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.icons a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
+}
+
+.icons a i{
+    -webkit-transform: scale(1.25);
+}
+
+nav{
+    grid-area: nav;
+    display: inline-flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 0 10px;
+    margin: 0px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    overflow: hidden;
+    position: relative;
+    height: 900px;
+}
+
+.header .back{
+    background-color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 300px;
+}
+
+.header img{
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header .titles{
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    width: 100%;
+}
+
+.header .titles h3,h1{
+    margin: 15px;
+    padding: 15px;
+}
+
+.header .titles h1{
+    font-size: 48px;
+}
+
+.header .titles h3{
+    font-size: 32px;
+}
+
+.header .titles button{
+    background-color: #0047FF;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.main{
+    display: flex;
+}
+
+.main .filters{
+    padding: 40px;
+    font-size: 20px;
+    border-right: 2px solid black;
+}
+
+.main .filters h3{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.main .filters h4{
+    font-size: 26px;
+    margin: 25px 0px;
+}
+
+.main .filters .brands,.price,.color,.volume{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30px;
+    border-top: 2px solid black;
+}
+
+.main .filters label{
+    margin: 10px 0px;
+}
+
+.main .filters input[type=checkbox]{
+    -webkit-transform: scale(2);
+}
+
+.main .filters input{
+    margin: 0px 10px;
+}
+
+.main .products{
+    width: 66vw;
+    display: grid;
+    margin: 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'acuario1 acuario2'
+                         'acuario3 acuario4'
+                         'acuario5 acuario5';
+}
+
+.main .products .acuario{
+    box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.2);;
+    margin: 50px 50px;
+    padding: 20px;
+    width: 28vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main .products .acuario img{
+    width: 22vw;
+    height: 18vw;
+    object-fit: cover;
+}
+
+.main .products .acuario p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.main .products .acuario #pvp{
+    color: #0047FF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main .products .acuario button{
+    background-color: #C6D6FF;
+    color: black;
+    border: 3px solid #0047FF;
+    border-radius: 15px;
+    font-family: inherit;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.main .products .acuario1{
+    grid-area: acuario1;
+}
+
+.main .products .acuario2{
+    grid-area: acuario2;
+}
+
+.main .products .acuario3{
+    grid-area: acuario3;
+}
+
+.main .products .acuario4{
+    grid-area: acuario4;
+}
+
+.main .products .acuario5{
+    grid-area: acuario5;
+}
+
+footer{
+    background-color: #C6D6FF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'footer1 footer2 footer3';
+}
+
+.footer1{
+    grid-area: footer1;
+    margin: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer1 i{
+    font-size: 36px;
+}
+
+.footer1 .news{
+    margin-top: 50px;
+}
+
+.footer1 .news input{
+    margin: 20px 0px;
+    width: 260px;
+    height: 46px;
+    border: white;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.footer1 .news button{
+    border: solid 3px white;
+    background-color: #C6D6FF;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    font-family: inherit;
+    margin: 20px 0px;
+    position: relative;
+    right: 10px;
+}
+
+.footer1 i{
+    margin: 10px;
+}
+
+.footer2{
+    grid-area: footer2;
+    margin: 50px 0px 50px 150px;
+}
+
+.footer2 ul{
+    list-style: none;
+}
+
+.footer2 h4{
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.footer2 li{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.footer2 i{
+    margin: 10px;
+    -webkit-transform: scale(1.25);
+}
+
+.footer3{
+    grid-area: footer3;
+    margin: 50px 0px 50px 200px;
+}
+
+.footer3 ul{
+    list-style: none;
+}
+
+.footer3 h4{
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.footer3 li{
+    margin: 20px;
+    font-size: 20px;
+
+}
